@@ -1,0 +1,130 @@
+.footer__subscribe {
+	background-image: url("./img/subscribe_background.png");
+	background-size: cover;
+	min-height: 448px;
+}
+
+.footer__subscribe__background_color {
+	width: 100%;
+	height: 100%;
+	min-height: 448px;
+
+	background: rgba(244, 244, 244, 0.7);
+}
+
+.footer__subscribe__content {
+	min-height: 448px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__subscribe__info {
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__subscribe__info p {
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	color: #222224;
+	padding: 30px 0;
+}
+
+.footer__subscribe__subscribe {
+	width: 557px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__subscribe__subscribe h2,
+.footer__subscribe__subscribe h3 {
+	line-height: 167%;
+	text-align: center;
+	color: #222224;
+}
+
+.footer__subscribe__subscribe h3 {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.footer__subscribe__subscribe h3 {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.footer__subscribe__form {
+	display: flex;
+	justify-content: center;
+	margin-top: 32px;
+}
+
+.footer__subscribe__form input {
+	font-weight: 400;
+	font-size: 14px;
+	color: #222224;
+	opacity: 0.67;
+	padding: 7px 64px 7px 22px;
+	max-width: 256px;
+	min-height: 49px;
+	border-radius: 24px 0 0 24px;
+	border: #e1e1e1;
+	background-color: #e1e1e1;
+}
+
+.footer__subscribe__form button {
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #f16d7f;
+	padding: 7px;
+	min-width: 100px;
+	border-radius: 0 24px 24px 0;
+}
+
+.footer__footer__background_color {
+	background-color: #222224;
+}
+
+.footer____footer__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer____footer__content p {
+	font-weight: 400;
+	font-size: 16px;
+	color: #fbfbfb;
+	padding: 30px 0 30px 5px;
+}
+
+.footer____footer__nav {
+	display: flex;
+	align-items: center;
+	padding: 24px 0;
+	gap: 7px;
+}
+
+.footer____footer__nav__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	background-color: #ffffff;
+}
+
+.footer____footer__nav__icon:hover {
+	background-color: #f16d7f;
+}
+
+.footer____footer__nav__icon:hover svg {
+	fill: #ffffff;
+}
