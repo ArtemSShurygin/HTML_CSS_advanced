@@ -12,9 +12,6 @@
 body {
 	font-family: "Lato";
 }
-a {
-	color: inherit;
-}
 
 .header {
 	background-color: #f8f3f4;
@@ -51,6 +48,7 @@ a {
 		height: 777px;
 		padding-top: 11px;
 		background-color: #f7f7f7;
+		border: solid 1px #eaeaea;
 	}
 
 	&__img button {
