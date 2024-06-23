@@ -270,176 +270,109 @@ body {
   font-family: "Lato";
 }
 
-.main {
+.content {
   display: flex;
   justify-content: space-between;
-  padding: 96px 0 128px;
+  padding: 64px 0 96px;
 }
-.main__l-side {
+.content__l-side {
+  width: 360px;
+  height: 500px;
+}
+.content__r-side {
   width: 652px;
 }
-.main__l-side__card-box {
+
+.registration-form {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
-.main__l-side__card-box__card {
-  position: relative;
-  display: flex;
-  border: solid 1px #eaeaea;
-  box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
-}
-.main__l-side__card-box__card__close {
-  position: absolute;
-  top: 28px;
-  right: 22px;
-}
-.main__l-side__card-box__card__close:hover path {
-  fill: #F16D7A;
-}
-.main__l-side__card-box__card img {
-  width: 262px;
-  height: 306px;
-}
-.main__l-side__card-box__card__about {
-  padding: 22px 97px 22px 31px;
-}
-.main__l-side__card-box__card__about h3 {
-  font-weight: 400;
-  font-size: 24px;
-  color: #222;
-}
-.main__l-side__card-box__card__about__parameters {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-weight: 400;
-  font-size: 22px;
-  color: #575757;
-  padding-top: 42px;
-}
-.main__l-side__card-box__card__about__parameters__price {
-  color: #F16D7A;
-}
-.main__l-side__card-box__card__about__parameters__quantity {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.main__l-side__card-box__card__about__parameters__quantity__num {
-  width: 44px;
-  height: 25px;
-  text-align: center;
-  font-size: 18px;
-  color: #656565;
-  border: solid 1px #eaeaea;
-}
-.main__l-side__button-box {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 72px;
-}
-.main__l-side__button-box button {
-  font-weight: 300;
-  font-size: 14px;
-  color: #000;
-  background-color: #ffffff;
-  border: solid 1px #a4a4a4;
-  padding: 17px 40px;
-}
-.main__l-side__button-box button:hover {
-  background-color: #F16D7A;
-  color: #ffffff;
-}
-.main__r-side {
-  width: 360px;
-}
-.main__r-side__adress-box {
+.registration-form .registration-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 13px;
 }
-.main__r-side__adress-box h3 {
+.registration-form .registration-box__heading {
   font-weight: 300;
   font-size: 16px;
   color: #222;
 }
-.main__r-side__adress-box input {
+.registration-form .registration-box__input {
+  font-weight: 400;
+  font-size: 13px;
+  color: #b1b1b1;
   padding: 13px 17px 16px;
+}
+.registration-form__gender-box {
+  padding: 32px 0;
+}
+.registration-form .gender-box {
+  display: flex;
+  gap: 20px;
+}
+.registration-form .gender-box__gender {
+  display: flex;
+  gap: 15px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #000;
+}
+.registration-form .gender-box__gender input[type=radio] {
+  transform: scale(1.3);
+}
+.registration-form__gender {
+  display: flex;
+  gap: 10px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #000;
+}
+.registration-form__password-about {
   font-weight: 300;
   font-size: 13px;
-  color: #222;
-  border: solid 1px #a4a4a4;
-}
-.main__r-side__adress-box input::-moz-placeholder {
-  color: #222;
-}
-.main__r-side__adress-box input::placeholder {
-  color: #222;
-}
-.main__r-side__adress-box input:first-of-type::-moz-placeholder {
   color: #b1b1b1;
+  padding-top: 15px;
 }
-.main__r-side__adress-box input:first-of-type::placeholder {
-  color: #b1b1b1;
-}
-.main__r-side__adress-box button {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 15px 12px 15px;
-  font-weight: 300;
-  font-size: 11px;
-  color: #4a4a4a;
-  background-color: #ffffff;
-  border: solid 1px #a4a4a4;
-}
-.main__r-side__adress-box button:hover {
-  color: #fff;
-  background-color: #F16D7A;
-}
-.main__r-side__checkout {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  width: 360px;
-  background-color: #f5f3f3;
-  margin: 57px 0 128px;
-  padding: 39px 34px 42px 44px;
-}
-.main__r-side__checkout__sub-total {
-  display: flex;
-  gap: 20px;
-  font-weight: 400;
-  font-size: 11px;
-  color: #4a4a4a;
-}
-.main__r-side__checkout__grand-total {
-  display: flex;
-  gap: 20px;
-  font-weight: 300;
-  font-size: 16px;
-  color: #222;
-  padding-top: 12px;
-}
-.main__r-side__checkout__grand-total__price {
-  font-weight: 700;
-  color: #F16D7A;
-}
-.main__r-side__checkout hr {
-  width: 275px;
-  margin: 21px 9px 0 0;
-  border: none;
-  border-top: solid 1px #e2e2e2;
-}
-.main__r-side__checkout button {
+.registration-form__button {
   display: flex;
   justify-content: center;
-  min-width: 273px;
-  font-weight: 300;
-  font-size: 16px;
+  align-items: center;
+  gap: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 167px;
+  font-size: 14px;
   color: #fff;
-  margin: 17px 9px 0 0;
-  padding: 16px 36px;
-  background-color: #F16D7A;
-}/*# sourceMappingURL=style_cart.css.map */
+  background-color: #f16d7f;
+  margin-top: 39px;
+  padding: 16px 29px;
+}
+
+.loyalty {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.loyalty__heading {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.loyalty__about {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}
+.loyalty__ul-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.loyalty__ul {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-weight: 300;
+  font-size: 24px;
+  color: #000;
+}/*# sourceMappingURL=style_registration.css.map */

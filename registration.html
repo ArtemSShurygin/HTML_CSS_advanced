@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/style_registration.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -49,9 +49,6 @@
 			</ul>
 			<ul>
 				<a href="cart.html">cart</a>
-			</ul>
-			<ul>
-				<a href="registration.html">registration</a>
 			</ul>
 			<div class="menu_section">
 				<div class="menu_section_type">
@@ -123,190 +120,107 @@
 			</div>
 		</nav>
 
-		<header class="main_content">
-			<div class="main_content-left hidden">
-				<img src="./img/header.png" alt="header" />
-			</div>
-			<div class="main_content-right">
-				<h1>
-					<span class="main_content-title_p1">THE BRAND</span> <br />
-					<span class="main_content-title_p2">OF LUXERIOUS <span class="main_content-title_p3">FASHION</span></span>
-				</h1>
+		<header class="header">
+			<div class="header__content container">
+				<div class="header__content__l-side">
+					<h1>REGISTRATION</h1>
+				</div>
 			</div>
 		</header>
 
-		<section class="card_list1 container">
-			<div class="card_list1-card_img1">
-				<div class="card_list1-card_background">
-					<div class="card_list1-card_text">
-						<h3>30% OFF</h3>
-						<h2>FOR WOMEN</h2>
-					</div>
-				</div>
-			</div>
-			<div class="card_list1-card_img2">
-				<div class="card_list1-card_background">
-					<div class="card_list1-card_text">
-						<h3>HOT DEAL</h3>
-						<h2>FOR MEN</h2>
-					</div>
-				</div>
-			</div>
-			<div class="card_list1-card_img3">
-				<div class="card_list1-card_background">
-					<div class="card_list1-card_text">
-						<h3>NEW ARRIVALS</h3>
-						<h2>FOR KIDS</h2>
-					</div>
-				</div>
-			</div>
-			<div class="card_list1-card_img4">
-				<div class="card_list1-card_background">
-					<div class="card_list1-card_text">
-						<h3>LUXIROUS &amp;&nbsp;TRENDY</h3>
-						<h2>ACCESORIES</h2>
-					</div>
-				</div>
-			</div>
-		</section>
+		<main>
+			<div class="content container">
+				<div class="content__l-side">
+					<form class="registration-form">
+						<div class="registration-box">
+							<h3 class="registration-box__heading">Your Name</h3>
+							<input class="registration-box__input" required type="text" placeholder="First Name" />
+							<input class="registration-box__input" required type="text" placeholder="Last Name" />
+						</div>
 
-		<section class="products container">
-			<div class="products-about">
-				<h2>Fetured Items</h2>
-				<p>Shop for items based on what we featured in this week</p>
-			</div>
+						<div class="registration-form__gender-box gender-box">
+							<p class="gender-box__gender"><input type="radio" value="male" name="gender" />Male</p>
+							<p class="gender-box__gender"><input type="radio" value="female" name="gender" />Female</p>
+						</div>
 
-			<div class="card_list2">
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
+						<div class="registration-box">
+							<h3 class="registration-box__heading">Login details</h3>
+							<input class="registration-box__input" required type="text" placeholder="First Name" />
+							<input class="registration-box__input" required type="text" placeholder="Last Name" />
+						</div>
+
+						<p class="registration-form__password-about">
+							Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+						</p>
+
+						<button class="registration-form__button">
+							JOIN NOW
+							<svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M11.54.208a.709.709 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003Z"
+									fill="#fff"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M0 4.96a.708.708 0 0 1 .708-.709h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.959Z"
+									fill="#fff"
+								/>
+							</svg>
 						</button>
-					</div>
-
-					<img src="./img/card2.1.png" alt="card1" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
+					</form>
 				</div>
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
-						</button>
+				<div class="content__r-side">
+					<div class="loyalty">
+						<h3 class="loyalty__heading">LOYALTY HAS ITS PERKS</h3>
+						<p class="loyalty__about">
+							Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+							soon as you join:
+						</p>
+						<div class="loyalty__ul-box">
+							<ul class="loyalty__ul">
+								<svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+										fill="#000"
+									/></svg>15% off welcome offer
+							</ul>
+							<ul class="loyalty__ul">
+								<svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+										fill="#000"
+									/></svg>Free shipping, returns and exchanges on all orders
+							</ul>
+							<ul class="loyalty__ul">
+								<svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+										fill="#000"
+									/></svg>$10 off a purchase on your birthday
+							</ul>
+							<ul class="loyalty__ul">
+								<svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+										fill="#000"
+									/></svg>Early access to products
+							</ul>
+							<ul class="loyalty__ul">
+								<svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z"
+										fill="#000"
+									/></svg>Exclusive offers &amp;&nbsp;rewards
+							</ul>
+						</div>
 					</div>
-
-					<img src="./img/card2.2.png" alt="card2" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
-				</div>
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
-						</button>
-					</div>
-
-					<img src="./img/card2.3.png" alt="card3" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
-				</div>
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
-						</button>
-					</div>
-
-					<img src="./img/card2.4.png" alt="card4" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
-				</div>
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
-						</button>
-					</div>
-
-					<img src="./img/card2.5.png" alt="card5" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
-				</div>
-				<div class="card_list2-card">
-					<div class="card_list2-card-add">
-						<button>
-							<img src="./img/nav5.png" alt="icon" />
-							<span>Add to Cart</span>
-						</button>
-					</div>
-
-					<img src="./img/card2.6.png" alt="card6" />
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p class="card_list2-card_about">
-						Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with
-						Moda Operandi.
-					</p>
-					<p class="card_list2-card_price">$52.00</p>
 				</div>
 			</div>
-
-			<div class="products-button">
-				<button>Browse All Product</button>
-			</div>
-		</section>
-
+		</main>
 		<footer class="footer">
-			<section class="footer__feature">
-				<div class="footer__feture__content container">
-					<div class="footer__feture__card">
-						<div class="footer__feture__icon_box">
-							<img src="./img/footer__feture_icon1.svg" alt="icon1" />
-						</div>
-						<h2>Free Delivery</h2>
-						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-					</div>
-					<div class="footer__feture__card">
-						<div class="footer__feture__icon_box">
-							<img src="./img/footer__feture_icon2.svg" alt="icon2" />
-						</div>
-						<h2>Sales &amp;&nbsp;discounts</h2>
-						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-					</div>
-					<div class="footer__feture__card">
-						<div class="footer__feture__icon_box">
-							<img src="./img/footer__feture_icon3.svg" alt="icon3" />
-						</div>
-						<h2>Quality assurance</h2>
-						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-					</div>
-				</div>
-			</section>
-
 			<section class="footer__subscribe">
 				<div class="footer__subscribe__background_color">
 					<div class="footer__subscribe__content container">
