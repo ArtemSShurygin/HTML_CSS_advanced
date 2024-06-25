@@ -121,6 +121,11 @@ a {
   color: #6f6e6e;
 }
 
+@media (max-width: 1139px) {
+  .main_nav {
+    padding: 0 16px;
+  }
+}
 .header {
   background-color: #f8f3f4;
   padding: 60px 0 60px;
@@ -157,7 +162,7 @@ a {
 }
 
 .footer__subscribe__info {
-  max-width: 360px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,7 +204,7 @@ a {
 .footer__subscribe__form {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 27px;
 }
 
 .footer__subscribe__form input {
@@ -266,6 +271,17 @@ a {
   fill: #ffffff;
 }
 
+@media (max-width: 1139px) {
+  .footer__subscribe {
+    margin: 0 0 -79px -440px;
+    height: 693px;
+  }
+  .footer__subscribe__content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 0 220px 440px;
+  }
+}
 body {
   font-family: "Lato";
 }
@@ -298,6 +314,7 @@ body {
   color: #222;
 }
 .registration-form .registration-box__input {
+  height: 45px;
   font-weight: 400;
   font-size: 13px;
   color: #b1b1b1;
@@ -352,15 +369,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  font-size: 24px;
 }
 .loyalty__heading {
   font-weight: 300;
-  font-size: 24px;
   color: #000;
 }
 .loyalty__about {
   font-weight: 300;
-  font-size: 24px;
   color: #000;
 }
 .loyalty__ul-box {
@@ -373,6 +389,25 @@ body {
   gap: 22px;
   align-items: center;
   font-weight: 300;
-  font-size: 24px;
   color: #000;
+}
+
+@media (max-width: 1139px) {
+  .container {
+    max-width: 736px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 96px;
+  }
+  .content__r-side {
+    width: 354px;
+  }
+  .loyalty {
+    font-size: 16px;
+  }
+  .loyalty__about {
+    padding-top: 10px;
+  }
 }/*# sourceMappingURL=style_registration.css.map */

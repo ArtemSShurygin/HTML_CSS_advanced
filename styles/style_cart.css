@@ -121,6 +121,11 @@ a {
   color: #6f6e6e;
 }
 
+@media (max-width: 1139px) {
+  .main_nav {
+    padding: 0 16px;
+  }
+}
 .header {
   background-color: #f8f3f4;
   padding: 60px 0 60px;
@@ -157,7 +162,7 @@ a {
 }
 
 .footer__subscribe__info {
-  max-width: 360px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,7 +204,7 @@ a {
 .footer__subscribe__form {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 27px;
 }
 
 .footer__subscribe__form input {
@@ -266,6 +271,17 @@ a {
   fill: #ffffff;
 }
 
+@media (max-width: 1139px) {
+  .footer__subscribe {
+    margin: 0 0 -79px -440px;
+    height: 693px;
+  }
+  .footer__subscribe__content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 0 220px 440px;
+  }
+}
 body {
   font-family: "Lato";
 }
@@ -340,12 +356,17 @@ body {
   padding-top: 72px;
 }
 .main__l-side__button-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  min-width: 235px;
   font-weight: 300;
   font-size: 14px;
   color: #000;
   background-color: #ffffff;
   border: solid 1px #a4a4a4;
-  padding: 17px 40px;
+  padding: 16px;
 }
 .main__l-side__button-box button:hover {
   background-color: #F16D7A;
@@ -404,7 +425,7 @@ body {
   align-items: end;
   width: 360px;
   background-color: #f5f3f3;
-  margin: 57px 0 128px;
+  margin-top: 57px;
   padding: 39px 34px 42px 44px;
 }
 .main__r-side__checkout__sub-total {
@@ -442,4 +463,42 @@ body {
   margin: 17px 9px 0 0;
   padding: 16px 36px;
   background-color: #F16D7A;
+}
+
+@media (max-width: 1139px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .container {
+    max-width: 736px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 59px 0 128px;
+  }
+  .main__l-side {
+    width: 736px;
+  }
+  .main__l-side__card-box__card__about {
+    padding-right: 179px;
+  }
+  .main__l-side__button-box {
+    justify-content: center;
+    gap: 48px;
+    padding-top: 62px;
+  }
+  .main__r-side {
+    width: 736px;
+    display: flex;
+    align-items: start;
+    gap: 16px;
+  }
+  .main__r-side__adress-box {
+    width: 360px;
+    padding-top: 64px;
+  }
+  .main__r-side__checkout {
+    margin-top: 103px;
+  }
 }/*# sourceMappingURL=style_cart.css.map */

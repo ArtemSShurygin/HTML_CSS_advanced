@@ -39,6 +39,7 @@ body {
 		}
 
 		&__input {
+			height: 45px;
 			font-weight: 400;
 			font-size: 13px;
 			color: #b1b1b1;
@@ -103,16 +104,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
+	font-size: 24px;
 
 	&__heading {
 		font-weight: 300;
-		font-size: 24px;
+
 		color: #000;
 	}
 
 	&__about {
 		font-weight: 300;
-		font-size: 24px;
+
 		color: #000;
 	}
 
@@ -127,7 +129,30 @@ body {
 		gap: 22px;
 		align-items: center;
 		font-weight: 300;
-		font-size: 24px;
+
 		color: #000;
+	}
+}
+
+@media (max-width: 1139px) {
+	.container {
+		max-width: 736px;
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 0 96px;
+		&__r-side {
+			width: 354px;
+		}
+	}
+
+	.loyalty {
+		font-size: 16px;
+
+		&__about {
+			padding-top: 10px;
+		}
 	}
 }

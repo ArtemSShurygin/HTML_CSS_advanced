@@ -126,40 +126,6 @@ details {
 	}
 }
 
-.page {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 284px;
-	height: 44px;
-	border: solid 1px #ebebeb;
-	margin-top: 48px;
-	margin-bottom: 96px;
-
-	&__previous-next {
-		padding: 0 16px;
-
-		& :hover {
-			fill: $colorSelectSite;
-		}
-	}
-
-	&__number-box {
-		display: flex;
-		gap: 17px;
-
-		& a {
-			font-weight: 300;
-			font-size: 16px;
-			color: #c4c4c4;
-
-			&:hover {
-				color: $colorSelectSite;
-			}
-		}
-	}
-}
-
 .card-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -222,6 +188,40 @@ details {
 	}
 }
 
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 284px;
+	height: 44px;
+	border: solid 1px #ebebeb;
+	margin-top: 48px;
+	margin-bottom: 96px;
+
+	&__previous-next {
+		padding: 0 16px;
+
+		& :hover {
+			fill: $colorSelectSite;
+		}
+	}
+
+	&__number-box {
+		display: flex;
+		gap: 17px;
+
+		& a {
+			font-weight: 300;
+			font-size: 16px;
+			color: #c4c4c4;
+
+			&:hover {
+				color: $colorSelectSite;
+			}
+		}
+	}
+}
+
 .feature {
 	padding: 104px 0;
 	background-color: #222224;
@@ -254,5 +254,43 @@ details {
 
 	&__icon-box {
 		height: 60px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.mobile-hidden {
+		display: none;
+	}
+
+	.container {
+		max-width: 736px;
+	}
+
+	.filter {
+		padding: 11px 0 40px;
+		min-height: 81px;
+
+		&__sort {
+			right: 0;
+		}
+	}
+
+	.card-list {
+		gap: 16px;
+	}
+
+	.page {
+		margin-top: 40px;
+		margin-bottom: 63px;
+	}
+
+	.feature {
+		padding: 48px 0 64px;
+
+		&__content {
+			flex-direction: column;
+			gap: 48px;
+			max-width: 360px;
+		}
 	}
 }
