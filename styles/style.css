@@ -169,21 +169,21 @@ body {
 }
 
 .card_list1-card_img1 {
-	background-image: url("../img/card1.1.png");
+	background-image: url("../img/card1.1.webp");
 }
 
 .card_list1-card_img2 {
-	background-image: url("../img/card1.2.png");
+	background-image: url("../img/card1.2.webp");
 }
 
 .card_list1-card_img3 {
-	background-image: url("../img/card1.3.png");
+	background-image: url("../img/card1.3.webp");
 }
 
 .card_list1-card_img4 {
 	width: 1140px;
 	height: 180px;
-	background-image: url("../img/card1.4.png");
+	background-image: url("../img/card1.4.webp");
 }
 
 .card_list1-card_background {
@@ -352,7 +352,7 @@ body {
 }
 
 .footer__subscribe {
-	background-image: url("../img/subscribe_background.png");
+	background-image: url("../img/subscribe_background.webp");
 	background-size: cover;
 	min-height: 448px;
 }

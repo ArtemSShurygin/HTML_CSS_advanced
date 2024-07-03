@@ -145,7 +145,7 @@ a {
   }
 }
 .footer__subscribe {
-  background-image: url("../img/subscribe_background.png");
+  background-image: url("../img/subscribe_background.webp");
   background-size: cover;
   min-height: 448px;
 }
