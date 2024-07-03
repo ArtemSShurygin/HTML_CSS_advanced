@@ -134,7 +134,7 @@ details {
 	&__card {
 		position: relative;
 		max-width: 360px;
-		padding-bottom: 24px;
+		padding-bottom: 20px;
 		background-color: #f8f8f8;
 
 		&__add {
@@ -237,7 +237,7 @@ details {
 		align-items: center;
 
 		& h2 {
-			margin-bottom: 16px;
+			margin-bottom: 19px;
 			font-weight: 400;
 			font-size: 19px;
 			color: #fbfbfb;
@@ -257,8 +257,8 @@ details {
 	}
 }
 
-@media (max-width: 1024px) {
-	.mobile-hidden {
+@media (min-width: 768px) and (max-width: 1139px) {
+	.tablet-hidden {
 		display: none;
 	}
 
@@ -289,8 +289,80 @@ details {
 
 		&__content {
 			flex-direction: column;
-			gap: 48px;
+			gap: 49px;
 			max-width: 360px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.mobile-hidden {
+		display: none;
+	}
+
+	.container {
+		max-width: 359px;
+	}
+
+	.filter {
+		padding: 12px 0 40px;
+		min-height: 81px;
+
+		&__content {
+			padding-top: 12px;
+			width: 300px;
+		}
+
+		&__content__summary {
+			min-height: 25px;
+
+			& svg {
+				transform: scale(2.5);
+				margin-left: 11px;
+			}
+		}
+
+		&__sort {
+			gap: 24px;
+			margin-left: 99px;
+			right: 0;
+
+			&__item__summary {
+				align-items: center;
+				gap: 9px;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.card-list {
+		gap: 16px;
+
+		&__card {
+			padding-bottom: 20px;
+		}
+	}
+
+	.page {
+		margin-top: 40px;
+		margin-bottom: 63px;
+	}
+
+	.feature {
+		padding: 48px 0 81px;
+
+		&__content {
+			flex-direction: column;
+			gap: 46px;
+			max-width: 343px;
+		}
+
+		&__card p {
+			padding: 0;
+		}
+
+		&__card h2 {
+			margin-bottom: 16px;
 		}
 	}
 }

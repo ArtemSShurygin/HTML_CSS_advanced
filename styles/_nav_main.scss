@@ -12,6 +12,8 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 75px;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .main_nav button {
@@ -20,6 +22,7 @@
 
 .main_nav-block1 {
 	display: flex;
+	align-items: baseline;
 	gap: 41px;
 	margin-right: 41px;
 }
@@ -100,8 +103,26 @@
 	color: #6f6e6e;
 }
 
-@media (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1139px) {
 	.main_nav {
+		max-width: 768px;
+		margin: 0 auto;
+		padding: 0 32px;
+	}
+}
+
+@media (max-width: 767px) {
+	.hidden {
+		display: none;
+	}
+
+	.main_nav {
+		max-width: 375px;
+		margin: 0 auto;
 		padding: 0 16px;
+	}
+
+	.main_nav-block2 {
+		margin-right: 0;
 	}
 }

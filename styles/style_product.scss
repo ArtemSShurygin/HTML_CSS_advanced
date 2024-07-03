@@ -14,32 +14,6 @@ body {
 	font-family: "Lato";
 }
 
-.header {
-	background-color: #f8f3f4;
-	padding: 60px 0 60px;
-
-	&__content {
-		@include flexBetween();
-
-		&__l-side h1 {
-			font-weight: 400;
-			font-size: 24px;
-			color: $colorSelectSite;
-		}
-
-		&__r-side {
-			font-weight: 300;
-			font-size: 14px;
-			color: #636363;
-
-			&__current-link {
-				font-weight: 700;
-				color: $colorSelectSite;
-			}
-		}
-	}
-}
-
 .product {
 	&__img {
 		display: flex;
@@ -211,8 +185,8 @@ body {
 	}
 }
 
-@media (max-width: 1139px) {
-	.mobile-hidden {
+@media (min-width: 768px) and (max-width: 1139px) {
+	.tablet-hidden {
 		display: none;
 	}
 
@@ -237,5 +211,64 @@ body {
 	.card-list {
 		gap: 16px;
 		flex-direction: row-reverse;
+	}
+}
+
+@media (max-width: 767px) {
+	.mobile-hidden {
+		display: none;
+	}
+
+	.container {
+		max-width: 357px;
+	}
+
+	.product {
+		&__img {
+			height: 624px;
+			background-size: 374px 454px;
+			background-position: center;
+		}
+
+		&__about {
+			margin-top: 0;
+			padding: 65px 24px;
+			max-width: 375px;
+
+			&__discription {
+				margin-top: 32px;
+				line-height: 143%;
+			}
+
+			&__price {
+				line-height: 130%;
+				margin-top: 34px;
+			}
+
+			&__hr2 {
+				width: 175px;
+				margin-top: 32px;
+			}
+
+			&__sort {
+				margin-top: 49px;
+				gap: 25px;
+			}
+
+			&__sort button {
+				font-size: 10px;
+				gap: 10px;
+			}
+
+			&__add {
+				margin-top: 64px;
+			}
+		}
+	}
+
+	.card-list {
+		flex-direction: column;
+		gap: 0px;
+		padding: 64px 0;
 	}
 }

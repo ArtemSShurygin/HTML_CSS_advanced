@@ -15,7 +15,6 @@ body {
 
 	&__l-side {
 		width: 360px;
-		height: 500px;
 	}
 
 	&__r-side {
@@ -40,10 +39,13 @@ body {
 
 		&__input {
 			height: 45px;
-			font-weight: 400;
-			font-size: 13px;
-			color: #b1b1b1;
 			padding: 13px 17px 16px;
+
+			&::placeholder {
+				font-weight: 300;
+				font-size: 13px;
+				color: #b1b1b1;
+			}
 		}
 	}
 
@@ -91,6 +93,7 @@ body {
 
 		width: fit-content;
 		min-width: 167px;
+		min-height: 50px;
 
 		font-size: 14px;
 		color: #fff;
@@ -134,17 +137,41 @@ body {
 	}
 }
 
-@media (max-width: 1139px) {
+@media (min-width: 768px) and (max-width: 1139px) {
 	.container {
 		max-width: 736px;
 	}
 
 	.content {
-		display: flex;
-		justify-content: space-between;
 		padding: 40px 0 96px;
 		&__r-side {
 			width: 354px;
+		}
+	}
+
+	.loyalty {
+		font-size: 16px;
+
+		&__about {
+			padding-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 359px;
+	}
+
+	.content {
+		flex-direction: column;
+		gap: 40px;
+		padding: 40px 0 96px;
+		&__l-side {
+			width: 359px;
+		}
+		&__r-side {
+			width: 359px;
 		}
 	}
 
